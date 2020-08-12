@@ -30,8 +30,8 @@ npm run test
 ## Klank Records Webshop
 
 Klank Records Webshop is an online Label Store that allows users to by tracks from their 
-favorite Producers. Klank Records wants to be the hub for all 
- South African Label, Techno related content online.
+favourite Producers. Klank Records wants to be the hub for all 
+ South African Labels, and all Techno related content online.
 
  ## Installation onto your local machine
 
