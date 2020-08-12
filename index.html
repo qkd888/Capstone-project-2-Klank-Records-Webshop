@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----------------------------------------------------LINKS------------------------------------------------------------->
+<!----------------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!--linking the bootstrap CDN to my HTML file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--linking the fontAwesome CDN to my HTML file, this cdn allows me to use icons in my file-->
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--connecting my external css file-->
+    <!-------------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------------------------------------------------------------------->
+    <title>Kalnk Records</title>
+    <!--The title of my webpage-->
+</head>
+
+<body>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <!-----------------------------------------------------NAVBAR---------------------------------------------------------->
+
+    <div class="container bg-light">
+        <!--This class allows us to have a grid container and adds some margin on the left 
+        and right and contains all my catalogue items-->
+        <!--The 'bg-light' class makes the background color of the container to be a light gray -->
+
+        <div class="row">
+            <!--The first row of the grid-->
+            <div class="col">
+                <!--The first column of the first row-->
+                <nav class="navi bg-light-grey pb-3">
+                    <!--The navi class is my class that allows me to style my navigation bar in my css file,
+          the bg-light class makes the background color of the container to be a light gray-->
+                    <!--The pb-3 class adds a padding bottom to the navigation bar-->
+
+                    <h2 class="ml-3 logo" id="theHeading" style="color: black;">
+                        <img src="contact\images\LOGO 3.png" alt="logo" height="75" width="50" />
+                        <b>Klank Records</b>
+                    </h2>
+                    <!--This acts as my logo, i used a heading instead of an image, added a logo class
+            so that i can style it in my css file-->
+                    <!--The The ml-3 class adds margin left to the heading-->
+                    <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page
+            to this heading. so when i press the 'back to top' button, it will take me to this heading -->
+
+                    <ul class="nav-links">
+                        <!--The beginning of the Unordered list, with a class of 'nav-links' which allows me to
+              customize my list in css-->
+
+                        <li class="active1">
+                            <a href="../index.html"><b>Home</b></a>
+                        </li>
+                        <!--first list item with active class which allows me to change the styling of this list item-->
+                        <li>
+                            <a href="./contact/contact.html"><b>Contact</b></a>
+                        </li>
+                        <!--second list item -->
+                        <li>
+                            <a href="./blog/blog.html"><b>Blog</b></a>
+                        </li>
+                        <!--third list item -->
+                    </ul>
+                    <button class="btn bt1 mr-3"><b>Register</b></button>
+                    <!--The register button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+                    <button class="btn bt2 mr-3"><b>Login</b></button>
+                    <!--The Login button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+
+                    <a href="cart.html" class="cart">
+                        <!--an a tag  that links to the cart html page -->
+
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <!--The shopping cart icon -->
+
+                        <span class="quantity">0</span>
+                        <!--Displays the number of items in the cart-->
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------>
+        <!--------------------------------------------BACKGROUND IMG-------------------------------------------------------->
+        <div class="row">
+            <!--The second row of the grid -->
+
+            <div class="col text-center">
+                <!--The first column of the second row with the class 'text-center', to center
+          column content -->
+
+                <img src="krl1.jpg" alt="logo" class="img1" height="400" width="200" />
+                <!--An image with the class of 'img1' which allows styling in  css-->
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------------->
+        <!------------------------------------------------SIGN UP FORM / DELIVERY/SHIPPING------------------------------------>
+        <div class="row bg-dark w-100 rw text-center mb-5">
+            <!--The Third row of the grid with class 'bg-dark' which gives a dark gray background -->
+            <!--the class 'w-100' makes the width of the row to be 100%-->
+            <!--The class rw allows me to style in css -->
+            <!--The class 'text-center' class centers row contents. with a margin bottom -->
+
+            <div class="col border-right 2px solid white">
+                <!--The first column of the third row, with a 'border-right 2px solid white' class
+          which adds a 2px white solid right border to the column-->
+
+                <p style="color: rgb(255, 255, 255); font-size: 20px;">
+                    <!--This paragraph tag is styled inline with the 'orangered' text color and 20px font size-->
+
+                    <b>Sign up for Klank Records news and latest releases</b>
+                </p>
+                <input type="email" placeholder="Enter email" class="mb-3" />
+                <!--input tag with the class of 'mb-3' which adds margin bottom to the input tag -->
+
+                <button class="mb-2"><b>Sign Up</b></button>
+                <!--A button with a class of 'mb-2' which adds margin bottom to the button -->
+            </div>
+            <div class="col border-right 2px solid white">
+                <!--The second column of the third row-->
+
+                <p style="color: white; font-size: 20px;"><b>Free Delivery</b></p>
+                <!--This paragraph tag is styled inline with the 'white' text color and 20px font size-->
+                <p style="color: rgb(255, 255, 255); font-size: 14px;">
+                    <b>For Orders over R500</b>
+                </p>
+                <!--This paragraph tag is styled inline with the 'gray' text color and 14px font size-->
+                <i class="fa fa-truck fa-2x" aria-hidden="true"></i>
+                <!--Delivery truck icon from font Awsome-->
+            </div>
+            <div class="col">
+                <!--The third column of the third row-->
+                <p style="color: white; font-size: 20px;"><b>Global shipping</b></p>
+                <p style="color: rgb(255, 255, 255); font-size: 14px;">
+                    <b>Via DHL Couriers</b>
+                </p>
+                <i class="fa fa-plane fa-2x" aria-hidden="true"></i>
+                <!--cargo plane icon from font Awsome-->
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------------->
+        <!-------------------------------------------------NEW RELEASES------------------------------------------------------->
+        <div class="row text-center">
+            <!--The fourth row of the grid-->
+            <div class="col">
+                <!--First column of the fourth row-->
+                <h1 style="color: black;"><b>New Releases</b></h1>
+                <!--heading of the column-->
+            </div>
+        </div>
+        <!-------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------DIV BOX IMAGE 1-------------------------------------------------------->
+        <div class="row">
+            <!--The fifth row of the grid-->
+
+            <div class="col">
+                <!--first column of the fifth row -->
+                <article>
+                    <!--The article tag is used to group together the information of the catalogue items-->
+                    <img src="images\bionics.jpg" alt="bionics" class="image mb-3 img-fluid" />
+
+                    <!--The mb-3 class adds some margin bottom to the image-->
+                    <!--The img-fluid class makes the image responsive. This class is applied to the 
+                    image so that the image scales with the parent element-->
+
+                    <a href="" data-toggle="modal" data-target="#myModal1">Bionics-original mix-Quintin Kelly
+            </a>
+                    <!--This a tag when clicked on, opens up a modal. it has a 'data-toggle' attribute which describes what the link
+            must toggle.-->
+                    <!--'The data-target' requires the id of the div containing your modal-->
+
+                    <div class="modal fade" id="myModal1">
+                        <!--The class modal creates the modal and the 'fade' describes the animation of the modal(how it pops up)-->
+                        <!--This Div has an id of 'myModal1' -->
+                        <div class="modal-dialog">
+                            <!--The class 'modal-dialog'creates the modal dialog box-->
+                            <div class="modal-content">
+                                <!--The class 'modal-content'contains the modal content-->
+                                <div class="modal-header">
+                                    <!--This class 'modal-header'creates the modal header-->
+                                    <p class="modalParagraph">
+                                        Bionics-original mix-Quintin Kelly
+                                    </p>
+                                    <!--Header content wrapped in paragraph tags with class modalParagraph for styling in css-->
+                                </div>
+                                <div class="modal-body">
+                                    <!--This class 'modal-body'creates the modal body-->
+                                    <p>
+                                        Written and produced by Quintin Kelly. Mastering at Klank Records Studios SA.
+                                    </p>
+                                    <!--body content wrapped in a paragraph tag-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="price">R15.00</h5>
+                    <!--Heading 5 tags with class of price for styling in css-->
+
+                    <button class="btn btn-secondary add-cart">
+              <b>add to cart</b>
+            </button>
+                    <!--The class btn-secondary adds a background color to the button text-->
+                </article>
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------->
+            <!---------------------------------------------DIV BOX IMAGE 2--------------------------------------------------->
+            <div class="col">
+                <!--Second column of the fifth row -->
+                <article>
+                    <img src="images\cafe strange.jpg" alt="cafe strange" class="image mb-3 img-fluid" />
+
+                    <a href="#" data-toggle="modal" data-target="#myModal2">Cafe Strange-original mix-Quintin Kelly</a
+            >
+            <div class="modal fade" id="myModal2">
+              <!--This Div has an id of 'myModal2' -->
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modalParagraph">
+                      Cafe Strange-original mix-Quintin Kelly
+                    </p>
+                  </div>
+                  <div class="modal-body">
+                    Written and produced by Quintin Kelly. Mastering at Klank
+                    Records Studios SA.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="price">R15.00</h5>
+
+            <button class="btn btn-secondary add-cart">
+              <b>add to cart</b>
+            </button>
+          </article>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------DIV BOX IMAGE 3------------------------------------------------------->
+        <div class="col">
+          <!--Third column of the fifth row -->
+          <article>
+            <img
+              src="images\catalyst.jpg"
+              alt="catalyst"
+              class="image mb-3 img-fluid"
+            />
+
+            <a href="#" data-toggle="modal" data-target="#myModal3">
+              Catalyst-original mix-Quintin Kelly</a
+            >
+
+            <div class="modal fade" id="myModal3">
+              <!--This Div has an id of 'myModal3' -->
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modalParagraph">
+                      Catalyst-original mix-Quintin Kelly
+                    </p>
+                  </div>
+                  <div class="modal-body">
+                    Written and produced by Quintin Kelly. Mastering at Klank
+                    Records Studios SA.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="price">R45.00</h5>
+
+            <button class="btn btn-secondary add-cart">
+              <b>add to cart</b>
+            </button>
+          </article>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------DIV BOX IMAGE 4------------------------------------------------------->
+        <div class="col">
+          <!--Fourth column of the fifth row -->
+
+          <article>
+            <img
+              src="images\control.jpg"
+              alt="control"
+              class="image mb-3 img-fluid"
+            />
+
+            <a href="#" data-toggle="modal" data-target="#myModal4"
+              >Control-original mix-Quintin Kelly
+            </a>
+
+                    <div class="modal fade" id="myModal4">
+                        <!--This Div has an id of 'myModal4' -->
+                        <div class="modal-dialog modal-sm">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modalParagraph">
+                                        Control-original mix-Quintin Kelly
+                                    </p>
+                                </div>
+                                <div class="modal-body">
+                                    Written and produced by Quintin Kelly. Mastering at Klank Records Studios SA.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h5 class="price">R15.00</h5>
+
+                    <button class="btn btn-secondary add-cart">
+              <b>add to cart</b>
+            </button>
+                </article>
+            </div>
+            <!-------------------------------------------------------------------------------------------------------------->
+            <!----------------------------------------------DIV BOX IMAGE5-------------------------------------------------->
+            <div class="col">
+                <!--Fifth column of the fifth row -->
+
+                <article>
+                    <img src="images/follow me.jpg" alt="follow me" class="image mb-3 img-fluid" />
+
+                    <a href="#" data-toggle="modal" data-target="#myModal5">Follow Me-original mix-Quintin Kelly</a
+            >
+            <div class="modal fade" id="myModal5">
+              <!--This Div has an id of 'myModal5' -->
+
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <p class="modalParagraph">
+                      Follow Me-original mix-Quintin Kelly
+                    </p>
+                  </div>
+                  <div class="modal-body">
+                    Written and produced by Quintin Kelly. Mastering at Klank
+                    Records Studios SA.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <h5 class="price">R15.00</h5>
+
+            <button class="btn btn-secondary add-cart">
+              <b>add to cart</b>
+            </button>
+          </article>
+        </div>
+      </div>
+      <!-------------------------------------------------------------------------------------------------------------------->
+      <!----------------------------------------------------------TESTEMONIALS---------------------------------------------->
+      <div class="row text-center">
+        <!--The Sixth row of the grid-->
+        <!--The 'text-center' centers the row contents-->
+        <div class="col">
+          <!--The First column of the sixth row-->
+          <h1 style="color: black;"><b>Testimonials</b></h1>
+          <!--Testimonials text with heading 1-->
+        </div>
+      </div>
+
+      <div class="row bg-dark pt-3 text-center">
+        <!--The Seventh row of the grid-->
+
+        <div class="col text-center">
+          <!--The first column of the seventh row-->
+          <!--The 'text-center' centers the column contents-->
+
+          <img src="images\respect.jpg" alt="respect" class="img2" />
+          <!--Image with the class img2 for styling in css-->
+          <p class="testimonial">
+            Twitter user @dizz <br />
+            <br />
+            What a release! <br />
+            Just got my copy of this track <br />
+            and I can't stop listening to it! Love it!
+          </p>
+          <!--Testimonials contents wrapped in a paragraph tag-->
+        </div>
+        <div class="col text-center">
+          <!--The second column of the seventh row-->
+
+          <img src="images\control.jpg" alt="control" class="img2" />
+          <p class="testimonial">
+            Instagram user @RichieHawtin <br />
+            <br />
+            Quintin Kelly is really hitting hard <br />
+            with this track. <br />
+            Nice work Quintin, and Klank Records!
+          </p>
+        </div>
+        <div class="col text-center">
+          <!--The Third column of the seventh row-->
+
+          <img src="images\catalyst.jpg" alt="catalyst" class="img2" />
+          <p class="testimonial">
+            Twitter user @DjFunkstar <br />
+            <br />
+            This EP is great! Good selection of <br />
+            tracks. and the art is really nice! <br />
+            Keep up the good work Klank Records!
+          </p>
+        </div>
+      </div>
+      <!-------------------------------------------------------------------------------------------------------------------->
+      <!--------------------------------------TOP 5 HOTTEST TRACKS OF THE WEEK---------------------------------------------->
+      <div class="row text-center mt-5">
+        <!--The Eighth row of the grid-->
+        <!--The 'text-center' centers the row contents-->
+        <!--The mt-5 class adds margin top-->
+        <div class="col">
+          <!--The First column of the eighth row-->
+
+          <h1 id="table1Heading"><b>Top 5 hottest tracks of the week</b></h1>
+          <!--Heading 5 of the row-->
+        </div>
+      </div>
+
+      <div class="row">
+        <!--The nineth row of the grid-->
+        <div class="col">
+          <!--The First column of the nineth row-->
+
+          <table class="table table-hover text-center border" id="table1">
+            <!--The class 'table' allow us to create a table-->
+            <!--The 'table-hover'class makes the table items hoverable-->
+            <!--The 'text-center' centers the table contents-->
+            <!--The 'border'class adds a border around the table-->
+
+            <thead class="tableHeader">
+              <!--The class 'tableHeader' creates the table header cells which become bold by default-->
+              <tr>
+                <!--The fist table row-->
+                <th scope="col"><b>#</b></th>
+                <th scope="col"><b>Track</b></th>
+                <th scope="col"><b>Artist</b></th>
+                <th scope="col"><b>Price</b></th>
+                <!--table headings-->
+              </tr>
+            </thead>
+            <tbody>
+              <!--Table body-->
+              <tr>
+                <!--The first table row-->
+                <th scope="row">1</th>
+                <td>Control-original mix-Quintin Kelly</td>
+                <td>Quintin Kelly</td>
+                <td>R15.00</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+
+                <!--The second table row-->
+                <td>Catalyst EP-Quintin Kelly</td>
+                <td>Quintin Kelly</td>
+                <td>R45.00</td>
+              </tr>
+              <tr>
+                <!--The third table row-->
+
+                <th scope="row">3</th>
+                <td>Follow Me-original mix-Quintin Kelly</td>
+                <td>Quintin Kelly</td>
+                <td>R15.00</td>
+              </tr>
+
+              <tr>
+                <!--The Fourth table row-->
+                <th scope="row">4</th>
+                <td>Bionics-original mix-Quintin Kelly</td>
+                <td>Quintin Kelly</td>
+                <td>R15.00</td>
+              </tr>
+
+              <tr>
+                <!--The Fifth table row-->
+
+                <th scope="row">5</th>
+                <td>Colours EP-Quintin Kelly</td>
+                <td>Quintin Kelly</td>
+                <td>R30.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row text-center border-bottom 2px solid mb-3 pb-3">
+        <!--The 10th row of the grid-->
+        <div class="col">
+          <!--The first column of the tenth row-->
+          <button class="hideBtn" id="hideBtn">Hide Table</button>
+          <button class="showBtn" id="showBtn">Show Table</button>
+        </div>
+      </div>
+      <!-------------------------------------------------------------------------------------------------------------------->
+      <!---------------------------------------------------BACK TO TOP BUTTON----------------------------------------------->
+      <div class="row text-center">
+        <div class="col"></div>
+      </div>
+      <div class="row text-center mt-5 border-top 3px">
+        <!--The 11th row of the grid-->
+        <div class="col">
+          <!--The first column of the elenth row-->
+          <a href="#theHeading" class="btn bt bt3 mt-4">Back To Top</a>
+                    <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page to my logo
+          at the top of the page  -->
+            </div>
+        </div>
+    </div>
+    <!---------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------SCRIPTS----------------------------------------------------------->
+    <script src="main2.js"></script>
+    <!--Linking external javaScript file to this HTML file-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <!--Linking the jquery minimised cdn to my html file -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <!--Linking the jquery cdn to my html file -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!--Linking the bootsrap javascript cdn to my html file -->
+</body>
+
+</html>

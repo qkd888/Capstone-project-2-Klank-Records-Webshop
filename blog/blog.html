@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------LINKS----------------------------------------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!--linking the bootstrap CDN to my HTML file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--linking the fontAwesome CDN to my HTML file, this cdn allows me to use icons in my file-->
+    <!--The title of my webpage-->
+    <link rel="stylesheet" href="main1.css" type="text/css" />
+    <!--connecting my external css file-->
+
+
+    <title>Klank Records./blog</title>
+    <!--The title of my webpage-->
+</head>
+
+<body>
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------NAVBOX-------------------------------------------------------------------------->
+    <div class="container bg-light-grey">
+        <!--This class allows us to have a grid container and adds some margin on the left 
+        and right and contains all my catalogue items-->
+        <!--The bg-light class makes the background color of the container to be a light gray -->
+
+        <div class="row">
+            <!--The first row of the grid-->
+            <div class="col">
+                <!--The first column of the first row-->
+                <nav class="navi bg-light-grey pb-3">
+                    <!--The navi class is my class that allows me to style my navigation bar in my css file,
+          the bg-light class makes the background color of the container to be a light gray-->
+                    <!--The pb-3 class adds a padding bottom to the navigation bar-->
+
+                    <h2 class="ml-3 logo" id="theHeading" style="color: black;">
+                        <img src="../contact\images\LOGO 3.png" alt="logo" height="75" width="50" />
+                        <b>Klank Records</b>
+                    </h2>
+                    <!--This acts as my logo, i used a heading instead of an image, added a logo class
+            so that i can style it in my css file-->
+                    <!--The The ml-3 class adds margin left to the heading-->
+                    <!--The id: #idHeading allows me to link the 'back to top' at the bottom of my page
+            to this heading. so when i press the 'back to top' button, it will take me to this heading -->
+
+                    <ul class="nav-links">
+                        <!--The beginning of the Unordered list, with a class of 'nav-links'which allows me to
+            customize my list in css-->
+
+                        <li>
+                            <a href="../index.html"><b>Home</b></a>
+                        </li>
+                        <!--First list item -->
+                        <li>
+                            <a href="../contact/contact.html"><b>Contact</b></a>
+                        </li>
+                        <!--Second list item -->
+                        <li class="active">
+                            <a href="#"><b>Blog</b></a>
+                        </li>
+                        <!--Third list item with active class which allows me to change the styling of this list item-->
+                    </ul>
+
+                    <button class="btn bt1 mr-3"><b>Register</b></button>
+                    <!--The register button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+
+                    <button class="btn bt2 mr-3"><b>Login</b></button>
+                    <!--The Login button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+                    <a href="../cart.html" class="cart">
+                        <!--an a tag  that links to the cart html page -->
+
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <!--The shopping cart icon -->
+
+                        <span class="quantity">0</span>
+                        <!--Displays the number of items in the cart-->
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!----------------------------------------------------IMAGE BOX 1---------------------------------------------------------->
+        <div class="row">
+            <!--The second row of the grid -->
+
+            <div class="col-sm text-center">
+                <!--First column of the second row. The 'col-sm' class is the size of the column which is small. The 'Text-center class'
+          centers the contents of the column -->
+
+                <img src="../blog\images\bionics.jpg" alt="bionics" class="image" />
+                <!--An image about the blog post withe class of 'image'-->
+            </div>
+            <div class="col-sm">
+                <!--second column of the first row-->
+
+                <p style="font-size: small;">15 October</p>
+                <!--This inline css styling of the p tag makes all the text within the paragraph tags smaller in size-->
+
+                <h3 class="mb-3"><b>Bionics-original mix-Quintin Kelly</b></h3>
+                <!--The class mb adds a margin bottom to the heading 3 tag-->
+
+                <p style="font-size: small;" class="mb-5">
+                    Bionics is a hard hitting Techno track. <br /> It will take you on a aggresive journey to the first break and then the melodic <br /> synth work takes you to a new level in the track. All round a exiting production that keeps you guessing
+                    till the end.
+                </p>
+                <!--The class mb adds a margin bottom to this paragraph tag and the inline styling makes
+          the text within the paragraph tags smaller-->
+
+                <a href="https://www.beatport.com/release/bionics/2676291" class="btn bt animate">Read more</a
+          >
+          <!--A tag with the external link and  a class 'btn' bt -->
+        </div>
+      </div>
+<!----------------------------------------------------IMAGE BOX 2---------------------------------------------------------->
+      <div class="row mt-4 border-top 2px pt-3">
+        <!--Third row of the grid. This row has a class of border-top 2px which adds a border to the top of the row of
+        2px and it is solid. The pt-3 class adds some padding top to the row, to create some room between the border
+         and the inner contents of the row-->
+
+        <div class="col-sm text-center">
+          <!--First column of the third row-->
+          <img
+            src="../blog\images\cafe strange.jpg"
+            alt="cafe strange"
+            class="image"
+          />
+        </div>
+        <div class="col-sm">
+          <!--second column of the third row-->
+
+          <p style="font-size: small;">3 November</p>
+          <h3 class="mb-3">Cafe Strange-original mix-Quintin Kelly</h3>
+          <p style="font-size: small;" class="mb-5">
+            Cafe Strange by Quintin Kelly is a pumping Tech House track.
+            <br />
+            With the driving kick and baseline, this tracks will be stomping the
+            dancefloors for sure.
+            <br />
+            A great release by Quintin Kelly and for Klank Records.
+          </p>
+
+          <a
+            href="https://www.beatport.com/release/cafe-strange/2013073"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+<!----------------------------------------------------IMAGE BOX 3---------------------------------------------------------->
+      <div class="row mt-4 border-top 2px pt-3">
+        <!--Fourth row of the grid-->
+
+        <div class="col-sm text-center">
+          <!--First column of the fourth row-->
+          <img src="../blog\images\catalyst.jpg" alt="catalyst" class="image" />
+        </div>
+        <div class="col-sm">
+          <!--second column of the fourth row-->
+          <p style="font-size: small;">8 November</p>
+          <h3 class="mb-3">
+            Catalyst EP - Quintin Kelly
+          </h3>
+          <p style="font-size: small;" class="mb-5">
+            Catalyst EP by Quintin Kelly
+            <br />
+            is a 3 track <b>BOMB.</b> There is a nice mixture of complementary
+            vibes that takes you to a new level!
+            <br />
+            This is a great EP by Quintin Kelly and is one for your
+            collection...
+            <br />
+          </p>
+
+          <a
+            href="https://www.beatport.com/release/catalyst/2401228"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+      <!----------------------------------------------------IMAGE BOX 4---------------------------------------------------------->
+      <div class="row mt-4 border-top 2px border-bottom 2px pt-3 pb-3">
+        <!--Fourth row of the grid-->
+        <div class="col-sm text-center">
+          <!--First column of the fourth row-->
+
+          <img src="../blog\images\control.jpg" alt="control" class="image" />
+        </div>
+        <div class="col-sm">
+          <!--second column of the fourth row-->
+          <p style="font-size: small;">14 November</p>
+          <h3 class="mb-3">
+            Control-EP-Quintin Kelly
+          </h3>
+          <p style="font-size: small;" class="mb-5">
+            Quintin Kelly is back with this 2 track EP called Control.
+            <br />
+            In this EP Quintin Kelly takes full control with the theme track
+            "Control"
+            <br />
+            Its deep rumbling bass line will get things going and break into a
+            deep soundscape of vocals and synths
+            <br />
+            building to a mass drop.... Nice track!
+            <br />
+            There is a supporting RMX by the talented Imanuel Haze.
+          </p>
+          <a
+            href=" https://www.beatport.com/release/control/2321409"
+            class="btn bt"
+            >Read more</a
+          >
+        </div>
+      </div>
+<!----------------------------------------------------BACK TO TOP------------------------------------------------------------------>
+      <div class="row text-center mt-5">
+        <!--Fifth row of the grid-->
+
+        <div class="col">
+          <!--First column of the fifth row-->
+          <a href="#theHeading" class="btn bt bt3">Back To Top</a>
+                <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page to my logo
+          at the top of the page  -->
+            </div>
+        </div>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------->
+    <!---------------------------------------------------SCRIPTS---------------------------------------------------------------------->
+    <script src="main2.js"></script>
+    <!--Linking external javaScript file to this HTML file-->
+
+</body>
+
+</html>

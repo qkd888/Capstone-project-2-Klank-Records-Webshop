@@ -1,0 +1,548 @@
+/*------------------------------------------------------BACKGROUND IMAGE------------------------------------------------------*/
+
+body {
+    margin-top: 10px;
+    /* adds a margin of 10px around the body of the page*/
+    font-family: sans-serif;
+    /* changes the font of all the contents in the body to 'sans-serif*/
+}
+
+.image {
+    width: 95%;
+    /* 95% so that when you hover the image it can be 100% to achieve the expanding image*/
+    height: 190px;
+    /* 190px so that when you hover the image it can be 200px to achieve the expanding image*/
+    padding: 15px;
+    /* adds a padding to the image*/
+    border: 5px solid rgb(0, 0, 0);
+    /* adds a gray solid 2px border around the image*/
+}
+
+.image:hover {
+    height: 200px;
+    /*The height of the picture then increases when hovered over*/
+    width: 100%;
+    /*The width of the picture then increases when hovered over*/
+}
+
+
+/*----------------------------------------------------*/
+
+article {
+    margin-bottom: 50px;
+    /* adds a bottom margin */
+    text-align: center;
+}
+
+
+/* centers the contents of the article*/
+
+h1 {
+    margin-bottom: 15px;
+    /* adds a margin of 15px to the bottom */
+}
+
+.price {
+    color: rgb(0, 0, 0);
+    /* changes the color text of the elements with the price class*/
+}
+
+p {
+    font-size: 14px;
+    /* Changes the font size of every paragraph in the page to 14px*/
+}
+
+.navi {
+    display: flex;
+    /* allows the contents of this class to appear side by side (inline)*/
+    border-bottom: 2px solid gray;
+    /* adds a solid gray bottom border of 2px*/
+    height: 90px;
+    /* sets the height */
+    margin-bottom: 20px;
+    /* adds a bottom margin*/
+}
+
+.navi .nav-links li {
+    display: inline;
+    /* makes the list items of the .nav-links class inside the navi class to 
+  display inline*/
+    margin: 10px;
+    /* adds margin around the list items*/
+    position: relative;
+    /*The items are positioned relative to their normal position*/
+    left: -40px;
+    /* position specification from left*/
+    top: 25px;
+    /*position specification from top*/
+    padding: 15px;
+    /*padding for the list items*/
+    font-size: 20px;
+    /*changes the font size*/
+}
+
+.active1,
+.navi .nav-links li:hover {
+    background-color: rgb(236, 233, 233);
+    /*The contents of the .active class and when you hover
+   over the list items of nav-links change the background color */
+    border-bottom: 2px solid rgb(0, 0, 0);
+    /*adds a solid orangered bottom border of 2px*/
+}
+
+.navi .nav-links li a {
+    text-decoration: none;
+    /*removes the underline in the a tags*/
+    color: rgb(0, 0, 0);
+    /*changes the text color  */
+}
+
+.nav-links {
+    position: relative;
+    /*The list is positioned relative to its normal position*/
+    left: 200px;
+    /* position specification from left*/
+}
+
+.bt1,
+.bt2 {
+    position: relative;
+    /*The buttons are positioned relative to their normal position*/
+    left: 230px;
+    /* position specification from left*/
+    top: 15px;
+    /* position specification from top*/
+    height: 50px;
+    /* sets the height of the buttons */
+    padding: 5px;
+    /* sets the padding of the buttons*/
+}
+
+.bt2 {
+    border: 2px solid rgb(0, 0, 0);
+    /* sets the border */
+    color: rgb(0, 0, 0);
+    /* sets the text color */
+}
+
+.bt2:hover {
+    background-color: rgb(0, 0, 0);
+    /* The background color of bt2 class is changed when bt2 is hovered over */
+    color: rgb(255, 0, 0);
+    /* The text color of bt2 class is changed when bt2 is hovered over */
+}
+
+.bt1 {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color */
+    color: rgb(255, 255, 255);
+}
+
+.bt1:hover {
+    background-color: black;
+    /* The background color of bt1 class is changed when bt1 is hovered over */
+    color: rgb(255, 2, 2);
+    /* The text color of bt1 class is changed when bt1 is hovered over */
+}
+
+.btn {
+    padding: 10px;
+    /* sets the padding*/
+}
+
+.rw {
+    position: relative;
+    /*the rw  is positioned relative to its normal position*/
+    left: 15px;
+    /* position specification from left*/
+}
+
+.fa-truck,
+.fa-plane {
+    color: rgb(0, 0, 0);
+    /* sets the text color of the icons*/
+}
+
+.cart {
+    position: relative;
+    /*the cart  is positioned relative to its normal position*/
+    left: 280px;
+    /* position specification from left*/
+    top: 15px;
+    /* position specification from top*/
+    text-decoration: none;
+    color: black;
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.cart:hover {
+    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(255, 255, 255);
+    /* sets the border */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.testimonial {
+    color: black;
+    /* sets the text color of the icons*/
+    border: 1px solid rgb(0, 0, 0);
+    /* sets the border*/
+    margin-top: 15px;
+    /* sets the top margin*/
+    width: 300px;
+    /* sets the width*/
+    position: relative;
+    /*the testimonial  is positioned relative to its normal position*/
+    left: 28px;
+    /* position specification from left*/
+    background-color: darkgrey;
+    /* sets the background color*/
+}
+
+.img2 {
+    width: 90%;
+    /* sets the width*/
+    height: 190px;
+    /* sets the height*/
+    border: 1px solid gray;
+    /* sets the border*/
+    padding: 3px;
+    /* sets the padding*/
+    filter: grayscale(30%);
+    /* sets the filter */
+}
+
+.img2:hover {
+    width: 100%;
+    /* The width  of img2  is changed when img2 is hovered over */
+    height: 200px;
+    /* The height  of img2  is changed when img2 is hovered over */
+}
+
+.img1 {
+    width: 90%;
+    /* sets the width*/
+    padding: 3px;
+    /* sets the padding*/
+    border: 1px solid gray;
+    /* sets the border*/
+}
+
+.img1:hover {
+    width: 100%;
+    /* The width  of img1  is changed when img1 is hovered over */
+}
+
+.logo {
+    position: relative;
+    /*the logo  is positioned relative to its normal position*/
+    top: 12px;
+    /* position specification from top*/
+}
+
+.modalParagraph {
+    font-size: 20px;
+    /* sets the font size*/
+}
+
+.tableHeader {
+    background-color: rgb(2, 2, 2);
+    /* sets the background color*/
+    color: white;
+}
+
+span {
+    position: relative;
+    /*the span  is positioned relative to its normal position*/
+    /* Makes the contents of span to be bold */
+    top: -2px;
+    /* position specification from top*/
+    margin-left: 5px;
+    /* sets the left margin*/
+    font-size: 18px;
+    /* sets the font size*/
+}
+
+.bt3 {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color*/
+    color: rgb(255, 255, 255);
+    /* sets the text color*/
+    margin-bottom: 30px;
+    /* sets bottom margin*/
+    padding: 10px;
+    /* sets the padding*/
+}
+
+.bt3:hover {
+    background-color: rgb(0, 0, 0);
+    /* The background color of bt3 class is changed when bt3 is hovered over */
+    color: rgb(255, 0, 0);
+    /* The text color of bt3 class is changed when bt3 is hovered over */
+}
+
+.add-cart:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 0, 0);
+}
+
+.add-cart {
+    text-decoration: none;
+    /* removes underlining*/
+    color: rgb(255, 255, 255);
+    /* sets the color of the text*/
+    background-color: rgb(0, 0, 0);
+    /* sets the background color*/
+    padding: 10px;
+    /* sets the padding*/
+    border-radius: 3px;
+    /* sets the border radius*/
+    margin-top: 15px;
+    /* sets the margin on the top*/
+}
+
+h5 {
+    margin-bottom: 20px;
+    /* sets the margin on the bottom*/
+}
+
+.hideBtn,
+.showBtn {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color*/
+    outline: none;
+    /* removes the outline*/
+    border: none;
+    /* removes the border*/
+    border-radius: 5px;
+    /* sets the border radius*/
+    padding: 5px;
+    /* sets the padding*/
+    color: white;
+}
+
+.hideBtn {
+    margin-right: 10px;
+    /* sets the margin on the right*/
+}
+
+.hideBtn:hover,
+.showBtn:hover {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color */
+    color: rgb(255, 2, 2);
+    /* sets the color of the text*/
+}
+
+
+/*-----------------------------------------------CART PAGE-------------------------------------------*/
+
+
+/*---------------------------------------------------------------------------------------------------*/
+
+.products-container {
+    width: 100%;
+    /*Sets the width of the products container to be 100%*/
+    justify-content: space-around;
+    /*contents are positioned with space before, between, and after the lines*/
+    margin: 0 auto;
+    /* positions the container in the center*/
+    margin-top: 50px;
+    /*Sets margin top*/
+}
+
+.product-header {
+    width: 100%;
+    /*Sets the width of the products header to be 100%*/
+    display: flex;
+    /*allows the header to take up as much space*/
+    justify-content: flex-start;
+    /*aligns the flex items at the top of the container*/
+    border-bottom: 4px solid rgb(156, 154, 154);
+    /*sets a 4px solid border that is lightgray in color*/
+    margin: 0 auto;
+    /*centers the header*/
+}
+
+.product-title {
+    width: 58%;
+    /*sets the width of the product title to 58%*/
+}
+
+.price-title {
+    width: 5%;
+    /*sets the width of the product price title to 5%*/
+    display: flex;
+    /*allows the price to take up as much space*/
+    align-items: center;
+    /*aligns the flex items at the center of the container*/
+    margin-right: 110px;
+    /*Sets the margin on the right*/
+}
+
+.quantity-title {
+    width: 15%;
+    /*sets the width of the product quantity title to 15%*/
+    display: flex;
+    /*allows the quantity title to take up as much space*/
+    align-items: center;
+    /*aligns the flex items at the center of the container*/
+}
+
+.total-title {
+    width: 15%;
+    /*sets the width of the cart total title to 5%*/
+    display: flex;
+    /*allows the total title to take up as much space*/
+    align-items: center;
+    /*aligns the flex items at the center of the container*/
+}
+
+.product {
+    width: 100%;
+    /*sets the width of the product div to 5%*/
+    display: flex;
+    /*allows the product to take up as much space*/
+    justify-content: space-around;
+    /*contents are positioned with space before, between, and after the lines*/
+    padding: 10px 0;
+    /*Sets the padding of 10px for the top and bottom and 0px for the left and right*/
+    border-bottom: 1px solid rgb(129, 125, 125);
+    /*sets a 1px solid border thats lightgray in color*/
+}
+
+.itemPrice {
+    margin-left: 100px;
+    /*sets the margin on the left for the price of the product*/
+    margin-right: 10px;
+    /*sets the margin on the right*/
+    height: 20px;
+    /*sets the height*/
+    width: 40px;
+    /*sets the width*/
+    position: relative;
+    /*sets the position to be relative*/
+    left: -30px;
+    /* position specification from left*/
+}
+
+.basketTotalContainer {
+    display: flex;
+    /*allows the total title to take up as much space*/
+    justify-content: flex-end;
+    /* aligns the flex items at the end of the container*/
+    width: 100%;
+    /*sets the width*/
+    padding: 10px 0;
+    /*sets the padding for the top and bottom to be 10px and 0px on the left and right*/
+}
+
+.basketTotalTitle {
+    width: 10%;
+    /*sets the width*/
+}
+
+.form-group {
+    background-color: rgb(0, 0, 0);
+    /*sets the background color*/
+    width: 400px;
+    /*sets the width*/
+    height: 100px;
+    /*sets the height*/
+    align-items: center;
+    /*centers the contents of the element*/
+    padding: 20px;
+    /*sets the padding*/
+    padding-left: 25px;
+    /*sets the padding on the left*/
+    border-radius: 5px;
+    /*sets the border radius*/
+}
+
+.deliveryInput {
+    margin-top: 10px;
+    /*sets the margin on the top*/
+    margin-bottom: 50px;
+    /*sets the margin on the bottom*/
+}
+
+.cartVat {
+    float: right;
+    /*floats the element to the right*/
+}
+
+.vatTitle {
+    position: relative;
+    /*sets the position*/
+    left: 970px;
+    /* position specification from left*/
+}
+
+.accordian-item {
+    display: block;
+    /*Displays an element as a block element*/
+    border-bottom: 1px solid rgb(168, 162, 162);
+    /*sets a 1px solid border on the bottom thats orangered in color*/
+    width: 300px;
+    /*sets the width*/
+}
+
+.accordian-title {
+    font-size: 14px;
+    /*sets the font size*/
+    font-weight: bold;
+    /*sets the font weight*/
+    line-height: 140%;
+    /*sets the line height*/
+    display: block;
+    /*Displays an element as a block element*/
+    position: relative;
+    /*sets the position*/
+    cursor: pointer;
+    /*changes the cursor to a pointer*/
+}
+
+.accordian-content {
+    display: none;
+    /*sets the display to none*/
+}
+
+#form {
+    position: relative;
+    /*sets the position*/
+}
+
+#checkOut {
+    width: 700px;
+    /*sets the width*/
+    position: relative;
+    /*sets the position*/
+    left: 190px;
+    /* position specification from left*/
+    margin-bottom: 60px;
+    /*sets the margin on the bottom*/
+    background-color: rgb(0, 0, 0);
+    /*sets the background color*/
+    outline: none;
+    /*sets the outline to none*/
+    border-color: rgb(0, 0, 0);
+    /*sets the border color*/
+    border-radius: 5px;
+    /*sets the border radius*/
+    cursor: pointer;
+    /*changes the cursor to a pointer*/
+    color: rgb(255, 255, 255);
+    /*sets the color of the text*/
+}
+
+#checkOut:hover {
+    background-color: rgb(0, 0, 0);
+    /*sets the background color*/
+    color: rgb(255, 0, 0);
+    /*sets the color of the text*/
+}

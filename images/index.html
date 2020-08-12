@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--linking the bootstrap CDN to my HTML file-->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--connecting my external css file-->
+
+    <title>static.</title>
+  </head>
+  <body>
+    <div class="container border border-dark rounded">
+      <!--This class allows us to have a grid container and adds some margin on the left 
+        and right and contains all my catalogue items-->
+      <!--The border class adds a border, the border-dark class changes the color of the border to
+         black and the rounded class adds a border radius to the border (round corners)-->
+
+      <h1 class="bg-light">Static.</h1>
+      <!--This class adds a light gray backgroudnd to the h1 heading-->
+
+      <div class="row">
+        <!--creating the first row of the grid -->
+
+        <div class="col">
+          <!--first column of the first row,  the col class creates a column with the width of auto-->
+          <article>
+            <!--The article tag is used to group together the information of the catalogue items-->
+            <img
+              src="images/adidas96.jpg"
+              alt="adidas Yung-96 Chasm - Core"
+              class="image img-thumbnail mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <!--The class img-thumbnail creates a thumbnail of the picture, a thumbnail
+                  gives an image a rounded 1px border appearance.-->
+            <!--The mb-3 class adds some margin bottom to the image-->
+            <!--The img-fluid class makes the image responsive. This class is applied to the 
+                    image so that the image scales with the parent element-->
+            <!--The shadow p-3 mb-5 bg-white rounded adds a regular shadow around the images-->
+
+            <p>
+              <b>adidas Yung-96 Chasm - Core </b>
+            </p>
+            <h5 class="price">R1,099.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+            <!--The class btn-secondary  adds a gray background color to the button and white text-->
+          </article>
+        </div>
+
+        <div class="col">
+          <!--second column of the first row-->
+
+          <article>
+            <img
+              src="images/AirJordan3.jpg"
+              alt="Air Jordan 3 SE Grade"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>Air Jordan 3 SE Grade </b>
+            </p>
+            <h5 class="price">R2,229.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+        <div class="col">
+          <!--third column of the first row-->
+
+          <article>
+            <img
+              src="images/AirJordan4.jpg"
+              alt="Air Jordan 4 Retro Winter"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>Air Jordan 4 Retro Winter</b>
+            </p>
+            <h5 class="price">R3,299.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+
+        <div class="col">
+          <!--fourth column of the first row-->
+
+          <article>
+            <img
+              src="images/KawSandals.jpg"
+              alt="SUICOKE Sandals"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>SUICOKE Sandals </b>
+            </p>
+            <h5 class="price">R2,499.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+        <div class="col">
+          <!--fifth column of the first row-->
+          <article>
+            <img
+              src="images/NewBalance.jpg"
+              alt="New Balance 997 Sport - Light"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>New Balance 997 Sport</b>
+            </p>
+            <h5 class="price">R2,299.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+      </div>
+
+      <div class="row">
+        <!--second row of the grid-->
+
+        <div class="col">
+          <!--first column of the second row-->
+
+          <article>
+            <img
+              src="images/NewBalance247.jpg"
+              alt="New Balance 247"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>New Balance 247 'Flat White'</b>
+            </p>
+            <h5 class="price">R1,999.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+        <div class="col">
+          <!--second column of the second row-->
+
+          <article>
+            <img
+              src="images/NikeReact.jpg"
+              alt="Nike React Element 55 SE"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>Nike React Element 55 SE </b>
+            </p>
+            <h5 class="price">R2,099.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+        <div class="col">
+          <!--third column of the second row-->
+
+          <article>
+            <img
+              src="images/NikeUptempo.jpg"
+              alt="Nike Air More Uptempo"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>Nike Air More Uptempo </b>
+            </p>
+            <h5 class="price">R3,299.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+        <div class="col">
+          <!--fourth column of the second row-->
+          <article>
+            <img
+              src="images/reeboks.jpg"
+              alt="Reebok Classic Leather MU"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>Reebok Classic Leather MU </b>
+            </p>
+            <h5 class="price">R1,399.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+
+        <div class="col">
+          <!--fifth column of the second row-->
+          <article>
+            <img
+              src="images/StanSmith.jpg"
+              alt="adidas Stan Smith"
+              class="image img-thumbnail  mb-3 img-fluid shadow p-3 mb-5 bg-white rounded"
+            />
+            <p>
+              <b>adidas Stan Smith </b>
+            </p>
+            <h5 class="price">R1,499.00</h5>
+            <button class="btn btn-secondary">add to cart</button>
+          </article>
+        </div>
+      </div>
+      <div class="container bg-light mb-5 border border-dark rounded">
+        <!--this container class is for the form, the bg-light class makes the background
+        of the container to be lightgray, the mb-5 class adds margin bottom to the container-->
+
+        <h4 class="mb-4">Sign up for news and deals</h4>
+        <!--The mb-4 class adds margin bottom to the  h4 heading -->
+        <form>
+          <!--creates the form-->
+
+          <div class="form-row mb-5">
+            <!--The class form-row creates a row for the form elements so that a horizontal form can be achieved
+             and the mb class adds a margin bottom to the row-->
+
+            <div class="col">
+              <!--The first column of the first row-->
+              <label>Firstname</label>
+              <input
+                type="text"
+                id="id"
+                class="form-control"
+                placeholder="John"
+              />
+            </div>
+            <div class="col">
+              <!--The second column of the first row-->
+              <label>Lastname</label>
+              <input
+                type="text"
+                id="surname"
+                class="form-control"
+                placeholder="Doe"
+              />
+            </div>
+            <div class="col">
+              <!--The third column of the first row-->
+              <label>Email</label>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="johnDoe@example.com"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="container mp-5 border border-dark rounded">
+        <!--The container class for the table-->
+
+        <table class="table table-hover table-dark">
+          <!--The table-hover class creates a hover effect when the elements of the table are hovered over.
+        The table-dark class gives the table a background color of dark gray-->
+          <thead>
+            <tr>
+              <!--first row of the table-->
+              <th scope="col">#</th>
+              <!--The col scope creates a table coulmn of width auto-->
+
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <!--second row of the table-->
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <!--third row of the table-->
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

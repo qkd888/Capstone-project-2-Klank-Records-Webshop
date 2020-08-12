@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!------------------------------------------------------------------------------------------------------------------------->
+    <!----------------------------------------------------LINKS---------------------------------------------------------------->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!--linking the bootstrap CDN to my HTML file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--linking the fontAwesome CDN to my HTML file, this cdn allows me to use icons in my file-->
+
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <!--connecting my external css file-->
+    <title>cart</title>
+</head>
+<!--------------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------------------------NAVBAR----------------------------------------------------------------->
+
+<body>
+    <div class="container bg-light">
+        <!--This class allows us to have a grid container and adds some margin on the left 
+          and right and contains all my catalogue items-->
+        <!--The 'bg-light' class makes the background color of the container to be a light gray -->
+
+        <div class="row">
+            <!--The first row of the grid-->
+            <div class="col">
+                <!--The first column of the first row-->
+
+                <nav class="navi bg-light pb-3">
+                    <!--The navi class is my class that allows me to style my navigation bar in my css file,
+            the bg-light class makes the background color of the container to be a light gray-->
+                    <!--The pb-3 class adds a padding bottom to the navigation bar-->
+                    <img src="contact\images\LOGO 3.png" alt="logo" height="75" width="50" />
+                    <h2 class="ml-3 logo" id="theHeading"><b>Klank Records</b></h2>
+                    <!--This acts as my logo, i used a heading instead of an image, added a logo class
+              so that i can style it in my css file-->
+                    <!--The The ml-3 class adds margin left to the heading-->
+                    <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page
+              to this heading. so when i press the 'back to top' button, it will take me to this heading -->
+
+                    <ul class="nav-links">
+                        <!--The beginning of the Unordered list, with a class of 'nav-links' which allows me to
+                customize my list in css-->
+
+                        <li class="active">
+                            <a href="./index.html"><b>Home</b></a>
+                        </li>
+                        <!--first list item with active class which allows me to change the styling of this list item-->
+                        <li>
+                            <a href="contact/contact.html"><b>Contact</b></a>
+                        </li>
+                        <!--second list item -->
+                        <li>
+                            <a href="blog/blog.html"><b>Blog</b></a>
+                        </li>
+                        <!--third list item -->
+                    </ul>
+                    <button class="btn bt1 mr-3"><b>Register</b></button>
+                    <!--The register button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+                    <button class="btn bt2 mr-3"><b>Login</b></button>
+                    <!--The Login button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+
+                    <a href="#" class="cart">
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <!--The shopping cart icon -->
+
+                        <span class="quantity">0</span>
+                        <!--Displays the number of items in the cart-->
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------PRODUCTS CONTAINER---------------------------------------------------------->
+        <div class="products-container">
+            <!--The container that contains all the products added to the cart-->
+
+            <div class="product-header">
+                <!--The header of the product-->
+
+                <h5 class="product-title">Product</h5>
+                <!--The product title/Name-->
+
+                <h5 class="price-title">Price</h5>
+                <!--The product price-->
+
+                <h5 class="quantity-title">Quantity</h5>
+                <!--The product quantity-->
+
+                <h5 class="total-title">Total</h5>
+                <!--The product total price-->
+            </div>
+            <div class="products"></div>
+            <!--where all the products are added to-->
+        </div>
+        <!--------------------------------------------------------------------------------------------------------------------------------->
+        <!-----------------------------------------------------COUPON FORM----------------------------------------------------------------->
+        <form id="form">
+            <!--A form for coupons-->
+
+            <div class="form-group">
+                <small id="smallCoupon" class="form-text text-muted">Free Coupon: Klank Records</small
+          >
+          <!--Free coupon wrapped around 'small' tags-->
+
+          <input type="text" placeholder="Enter Coupon" value="" id="coupon1" />
+          <!--The input field for the coupon-->
+
+          <button onclick="coupon()">Apply Coupon</button>
+          <!--The A button that invokes the coupon () function-->
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------DELIVERY COLLECTION FORM---------------------------------------------------->
+        <!--Heading3 for asking the user whether they are picking up the parcel or is it being delivered-->
+        <h3>Delivery or Collection?</h3>
+        
+        <!----------------------------------------Radio button option for Delivery option------------------------------------------>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="option"
+            id=" Delivery"
+            value=" Delivery"
+            checked
+          />
+          
+          <!------------------------------------------label for Delivery option---------------------------------------------------->
+          <label class="form-check-label" for="Delivery">
+            Delivery
+          </label>
+          
+        </div>
+<!--------------------------------------------------Radio button option for collection option-------------------------------------->
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="option"
+            id="Collection"
+            value="Collection"
+          />
+          <!--label for collection option-->
+          <label class="form-check-label" for="Collection">
+            Collection
+          </label>
+          
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------------DELIVERY OPTOINS FORM------------------------------------------------->
+          <!--Heading4 for the delivery options heading-->
+        <h4>Delivery Options</h4>
+        
+        <!--Drop down menu item 1-->
+        <div class="accordian-item">
+          <!-- menu item 1 title-->
+          <div class="accordian-title"><h6>Express</h6></div>
+          
+           <!-- menu item 1 content-->
+          <div class="accordian-content">
+            
+            <p>
+              Express delivery option is an expedited delivery service for
+              which<br />
+              the customer pays a premium for faster delivery. <br />
+              Our Express delivery option takes 1 - 3 business days <br />
+              to reach the customer. Our Express delivery costs R250.
+            </p>
+          </div>
+        </div>
+        <div class="accordian-item">
+          <!--Drop down menu item 2-->
+          <div class="accordian-title"><h6>Economy</h6></div>
+          <!-- menu item 2 title-->
+
+          <div class="accordian-content">
+            <!-- menu item 2 content-->
+            <p>
+              Economy delivery option is the cheapest and slowest way of
+              shipping a package <br />
+              It is cheaper than our Express delivery option costing you only
+              R150 <br />
+              and taking 3 - 5 business days to be delivered.
+            </p>
+          </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------INPUT FIELD FOR DELIVERY OPTION--------------------------------------------->
+        <input
+          type="text"
+          id="deliveryOptions"
+          placeholder="Enter Delivery Option"
+          class="deliveryInput"
+          required
+        />
+         <button onclick="deliveryCost()">Submit</button>
+        <!-- A button that invokes the deliveryCost() function -->
+      </form>
+      <button id="checkOut" onclick="checkOut()">Confirm Order</button>
+      <!-- A button that invokes the checkOut() function -->
+    </div>
+    <script src="main2.js"></script>
+    <!--Linking external javaScript file to this HTML file-->
+    
+  </body>
+</html>

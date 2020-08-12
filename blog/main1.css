@@ -1,0 +1,188 @@
+.image {
+    width: 90%;
+    /* 90% so that when you hover the image it can be 100% to achieve the expanding image*/
+    height: 300px;
+    /* 300px so that when you hover the image it can be 400px to achieve the expanding image*/
+    padding: 3px;
+    /* sets the padding */
+    border: 1px solid gray;
+    /* sets the border */
+}
+
+.image:hover {
+    width: 100%;
+    /*The width of the picture then increases when hovered over*/
+    height: 400px;
+    /*The height of the picture then increases when hovered over*/
+}
+
+.bt {
+    padding: 10px;
+    /*adds padding*/
+    background-color: rgb(5, 5, 5);
+    /*changes the background color*/
+    position: relative;
+    color: rgb(255, 253, 253);
+}
+
+.bt:hover {
+    background-color: rgb(0, 0, 0);
+    /*background color changes when bt is hovered over*/
+    color: rgb(255, 0, 0);
+    /*text color changes when bt is hovered over*/
+}
+
+.navi {
+    display: flex;
+    /* allows the contents of this class to appear side by side (inline)*/
+    border-bottom: 2px solid gray;
+    /* adds a solid gray bottom border of 2px*/
+    height: 90px;
+    /* sets the height */
+    margin-bottom: 20px;
+    /* adds a bottom margin*/
+}
+
+.navi .nav-links li {
+    display: inline;
+    /* makes the list items of the .nav-links class inside the navi class to 
+  display inline*/
+    margin: 10px;
+    /* adds margin around the list items*/
+    position: relative;
+    /*list items are positioned relative to its normal position*/
+    left: -40px;
+    /* position specification from left*/
+    top: 25px;
+    /*position specification from top*/
+    padding: 15px;
+    /*padding for the list items*/
+    font-size: 20px;
+    /*changes the font size*/
+}
+
+.active,
+.navi .nav-links li:hover {
+    background-color: rgb(236, 233, 233);
+    /*The contents of the .active class and when you hover
+  over the list items of nav-links change the background color */
+    border-bottom: 2px solid rgb(0, 0, 0);
+    /*adds a solid orangered bottom border of 2px*/
+}
+
+.navi .nav-links li a {
+    text-decoration: none;
+    /*removes the underline in the a tags*/
+    color: black;
+    /*changes the text color  */
+}
+
+.nav-links {
+    position: relative;
+    /*nav-links is positioned relative to its normal position*/
+    left: 200px;
+    /* position specification from left*/
+}
+
+.bt1,
+.bt2 {
+    position: relative;
+    /*the buttons are positioned relative to its normal position*/
+    left: 230px;
+    /* position specification from left*/
+    top: 15px;
+    /* position specification from top*/
+    height: 50px;
+    /* sets the height */
+    padding: 10px;
+    /* sets the padding */
+}
+
+.bt2 {
+    border: 2px solid rgb(0, 0, 0);
+    /* sets the border */
+    color: rgb(0, 0, 0);
+    /* sets the text color */
+}
+
+.bt2:hover {
+    background-color: rgb(0, 0, 0);
+    /* The background color of bt2 class is changed when bt2 is hovered over */
+    color: rgb(255, 0, 0);
+    /* The text color of bt2 class is changed when bt2 is hovered over */
+}
+
+.bt1 {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color */
+    color: rgb(255, 255, 255);
+}
+
+.bt1:hover {
+    background-color: black;
+    /* The background color of bt1 class is changed when bt1 is hovered over */
+    color: rgb(255, 0, 0);
+    /* The text color of bt1 class is changed when bt1 is hovered over */
+}
+
+.cart {
+    position: relative;
+    /*the cart  is positioned relative to its normal position*/
+    left: 280px;
+    /* position specification from left*/
+    top: 15px;
+    /* position specification from top*/
+    text-decoration: none;
+    color: black;
+    width: 170px;
+    height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+.cart:hover {
+    background-color: rgb(15, 15, 15);
+    border: 2px solid rgb(255, 255, 255);
+    /* sets the border */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+span {
+    position: relative;
+    /*the span  is positioned relative to its normal position*/
+    font-weight: bold;
+    /*changes text to bold*/
+    top: -2px;
+    /* position specification from top*/
+    margin-left: 5px;
+    /* sets left margin*/
+    font-size: 18px;
+    /* sets the font-size*/
+}
+
+.logo {
+    position: relative;
+    /*the logo  is positioned relative to its normal position*/
+    top: 12px;
+    /* position specification from top*/
+}
+
+.bt3 {
+    background-color: rgb(0, 0, 0);
+    /* sets the background color*/
+    color: rgb(255, 255, 255);
+    /* sets the text color*/
+    margin-bottom: 30px;
+    /* sets bottom margin*/
+    padding: 10px;
+    /* sets the padding*/
+}
+
+.bt3:hover {
+    background-color: rgb(0, 0, 0);
+    /* The background color of bt3 class is changed when bt3 is hovered over */
+    color: rgb(255, 0, 0);
+    /* The text color of bt3 class is changed when bt3 is hovered over */
+}

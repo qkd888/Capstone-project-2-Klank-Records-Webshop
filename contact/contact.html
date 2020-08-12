@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<!----------------------------------------LINKS------------------------------------------------------------------------------------>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" />
+    <!--linking the bootstrap CDN to my HTML file-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--linking the fontAwesome CDN to my HTML file, this cdn allows me to use icons in my file-->
+    <link rel="stylesheet" href="main2.css" type="text/css" />
+    <!--connecting my external css file-->
+    <title>Klank Records.</title>
+    <!--The title of my webpage-->
+</head>
+<!--------------------------------------------------------------------------------------------------------------------------------->
+<!-----------------------------------------------BODY------------------------------------------------------------------------------>
+
+<body>
+    <!---------------------------------------------NAVBAR-------------------------------------------------------------------------->
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <div class="container btn-light-grey">
+        <!--This class allows us to have a grid container and adds some margin on the left 
+        and right and contains all my catalogue items-->
+        <!--The bg-light class makes the background color of the container to be a light gray -->
+
+        <div class="row border-bottom 3px solid">
+            <!--The first row of the grid with a solid bottom border of 3px -->
+            <div class="col">
+                <!--The first column of the first row-->
+                <nav class="navi bg-light-grey pb-3">
+                    <!--The navi class is my class that allows me to style my navigation bar in my css file,
+          the bg-light class makes the background color of the container to be a light gray-->
+                    <!--The pb-3 class adds a padding bottom to the navigation bar-->
+
+                    <h2 class="ml-3 logo" id="theHeading" style="color: black;">
+                        <img src="../contact\images\LOGO 3.png" alt="logo" height="75" width="50" />
+                        <b>Klank Records</b>
+                    </h2>
+                    <!--This acts as my logo, i used a heading instead of an image, added a logo class
+            so that i can style it in my css file-->
+                    <!--The The ml-3 class adds margin left to the heading-->
+                    <!--The id: #idHeading allows me to link the 'back to top' at the bottom of my page
+            to this heading. so when i press the 'back to top' button, it will take me to this heading -->
+
+                    <ul class="nav-links">
+                        <!--The beginning of the Unordered list, with a class of 'nav-links'which allows me to
+            customize my list in css-->
+
+                        <li>
+                            <a href="../index.html"><b>Home</b></a>
+                            <a href="../cart.html"></a>
+                        </li>
+                        <!--First list item -->
+
+                        <li class="active">
+                            <a href="#"><b>Contact</b></a>
+                        </li>
+                        <!--Second list item with active class which allows me to change the styling of this list item-->
+
+                        <li>
+                            <a href="../blog/blog.html"><b>Blog</b></a>
+                        </li>
+                        <!--third list item -->
+                    </ul>
+                    <button class="btn bt1 mr-3"><b>Register</b></button>
+                    <!--The register button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+
+                    <button class="btn bt2 mr-3"><b>Login</b></button>
+                    <!--The Login button in my navigation bar with class 'btn bt1' -->
+                    <!--The mr-3 class adds margin right to this button -->
+
+                    <a href="../cart.html" class="cart">
+                        <!--an a tag  that links to the cart html page -->
+
+                        <i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+                        <!--The shopping cart icon -->
+
+                        <span class="quantity">0</span>
+                        <!--Displays the number of items in the cart-->
+                    </a>
+                </nav>
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------------------->
+        <!---------------------------------------------CONTACT US------------------------------------------------------------------>
+        <div class="row">
+            <!--The second row of the grid -->
+
+            <div class="col">
+                <!--First column of the second row-->
+
+                <h2 class="contactHeading">Contact Us</h2>
+                <!--heading 2 with a class of contactHeading for styling in my css file-->
+                <ul class="socialMedia border-bottom solid 4px">
+                    <!--beginning of the unordered list with a class of socialMedia for styling in my css file,
+           the list has a solid bottom border of 4px-->
+
+                    <li>
+                        <!--First list item-->
+                        <i class="fa fa-facebook-official" aria-hidden="true">
+                KlankRecordsOfficial</i
+              >
+              <!--Facebook icon-->
+            </li>
+            <li>
+              <!--Second list item-->
+              <i class="fa fa-twitter-square" aria-hidden="true">
+                KlankRecordsOfficial</i
+              >
+              <!--Twitter icon-->
+            </li>
+            <li>
+              <!--Third list item-->
+              <i class="fa fa-instagram" aria-hidden="true">
+                KlankRecordsOfficial</i
+              >
+              <!--instagram icon-->
+            </li>
+            <li>
+              <!--Fourth list item-->
+              <i class="fa fa-phone-square" aria-hidden="true"></i> 072 349 5629
+                        <!--phone icon-->
+                    </li>
+                    <li>
+                        <!--Fifth list item-->
+                        <i class="fa fa-envelope" aria-hidden="true">
+                klankrecords@gmail.com</i
+              >
+              <!--email icon-->
+            </li>
+          </ul>
+          <!----------------------------------------------------------------------------------------------------------------------->
+          <!--------------------------------------DEMO SUBMISSION FORM------------------------------------------------------------->
+          <h4>
+            For demo submissions leave your details below and we will be in
+            contact with you.
+          </h4>
+          <!--heading 4-->
+
+          <form>
+            <!--Beginning of the form -->
+
+            <div class="form-group">
+              <!--The 'form-group' class groups together the contents within its tags -->
+              <label for="name"><b>Name *</b></label>
+              <!--Label for name with the estrix sign to imply that its a required field -->
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                placeholder="Enter name"
+                required
+              />
+              <!--Input field with the class 'form-control' which includes 
+                    styles for general appearance, focus state, sizing, and more.
+                  The required attribute wont let the user continue with the form if the input field is empty -->
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><b>Email address *</b></label>
+              <!--Label for the email with the estrix sign to imply that its a required field -->
+
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+              <!--The small tag decreases the size of the text within it -->
+            </div>
+            <div class="form-group">
+              <label for="phoneNumber"><b>Phone Number *</b></label>
+              <input
+                type="text"
+                class="form-control"
+                id="phoneNumber"
+                placeholder="Phone Number"
+                required
+              />
+            </div>
+            <!--------------------------------------------------------------------------------------------------------------------->
+            <!-----------------------------------------------HOW WOULD YOU LIKE TO RESPOND RADIO BUTTON---------------------------->
+            <p><b>How would you like us to respond?</b></p>
+            <!--'how should we respont' paragraph tag-->
+
+            <div class="form-check">
+              <!-- A class for radio buttons that improves the layout and behavior of the HTML element-->
+
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios1"
+                value="option1"
+                checked
+              />
+              <!--The radio button option1 input with a class of 'form-check-input' and has an attribute of 'checked'
+                  which checks this radio button by default, the user can then choose which ever option they want-->
+
+              <label class="form-check-label" for="exampleRadios1">
+                <!--The label for the radio button option1-->
+                Email
+              </label>
+            </div>
+
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="exampleRadios"
+                id="exampleRadios2"
+                value="option1"
+              />
+              <!--The radio button option2. This radio button doesnt have the checked attribute-->
+
+              <label class="form-check-label" for="exampleRadios2">
+                Phone Call
+              </label>
+              <!--The label for the radio button option1-->
+            </div>
+            <!------------------------------------------------------------------------------------------------------------------->
+            <!----------------------------------------SUBMIT BUTTON-------------------------------------------------------------->
+            <button type="submit" class="btn bt bt4 mt-5 w-100">
+              Submit
+            </button>
+          </form>
+
+          <!--A submit button with a class of 'btn' bt bt4 for styling in my css file.
+                The 'mt-5'class  adds a margin top to this button. The 'w-100'class makes the width
+              of the button to be 100%-->
+        </div>
+        <div class="col-md text-center mt-4 mb-4 border-left 3px solid">
+          <!--The second column of the second row with a class of 'text-center' which centers the column contents
+          The other classes, 'mt-4' and 'mb-4' adds margin top and bottom of 4px.
+        'boder-left'adds a solid border to the left of 3px-->
+
+          <img src="../contact\images\k_4.jpg" alt="logo" class="image mt-4" />
+          <!--Image with a class of 'image' and 'mt-4' -->
+        </div>
+      </div>
+      <!--------------------------------------------------------------------------------------------------------------------------->
+      <!-----------------------------------------------BACK TO TOP BUTTON---------------------------------------------------------->
+      <div class="row text-center mt-5 border-top 3px">
+        <!--Third row of the grid-->
+
+        <div class="col">
+          <!--First column of the third row-->
+          <a href="#theHeading" class="btn bt bt3 mt-4">Back To Top</a>
+          <!--The id: #idHeading allows me to link the 'back to top' a tag at the bottom of my page to my logo
+      at the top of the page  -->
+        </div>
+      </div>
+    </div>
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <!-------------------------------------------------------SCRIPTS--------------------------------------------------------------->
+    <script src="main2.js"></script>
+    <!--Linking external javaScript file to this HTML file-->
+    
+  </body>
+  <!-------------------------------------------------------------------------------------------------------------------------------->
+  <!-------------------------------------------------------------------------------------------------------------------------------->
+</html>
